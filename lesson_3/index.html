@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log('hello world', NaN, null, true, false, undefined, 123, 123e123, 123E123, +1, -1, 0b1101010,
+            0o1257123, 0x1512ffa124, '\\', '\'', '\"', 'aa\b', 'bb\f', 'cc\n', 'ss\r', 'ww\t', 'qqq\v');
+
+        console.error('this is big ass');
+
+        console.time('literalsGroup');
+        console.group('Object');
+        console.log(null);
+        console.log('function');
+        console.groupEnd();
+
+        console.group('Undefined');
+        console.log(undefined);
+        console.groupEnd();
+
+        console.group('Boolean');
+        console.log(true);
+        console.log(false);
+        console.groupEnd();
+
+        console.group('Number');
+        console.log(NaN);
+        console.log('123', 123);
+        console.log('123e123', 123e123);
+        console.log('123E123', 123E123);
+        console.log('+1', +1);
+        console.log('-1', -1);
+        console.log('0b1101010', 0b1101010);
+        console.log('0o1257123', 0o1257123);
+        console.log('0x1512ffa124', 0x1512ffa124);
+        console.groupEnd();
+
+        console.group('String');
+        console.log('\\');
+        console.log('\'');
+        console.log('\"');
+        console.groupEnd();
+        console.timeEnd('literalsGroup');
+
+        let age = prompt('how your age', '22');
+        console.log(age);
+
+        let a18 = confirm();
+        console.log(a18);
+
+        let name = prompt('your name, lastName, sex, age','Andru Slot man 22');
+        console.log(name);
+
+        console.log(window);
+
+        console.log(document);
+        console.dir(document);
+
+       var man = 'man';
+
+        
+
+    </script>
+</body>
+
+</html>
